@@ -45,13 +45,13 @@ public class LoginTest {
 		lp.clickbtnLogin();
 	}
 
-	/*@Then("the user should be redirected to the MyAccount Page")
+	@Then("the user should be redirected to the MyAccount Page")
 	public void my_account_page() {
 		//Baseclass.getlogger().info("********My Account Page validation");
 		myp=new MyAccountPage(Baseclass.getDriver());
 	    boolean targetpage =  myp.ValitationofAccount();
 	    Assert.assertEquals(targetpage, true);
-	}	*/
+	}
 	
 	@Then("user should successfull loged in with excel data {string}")
 	public void Input_excel_data(String rows) {
